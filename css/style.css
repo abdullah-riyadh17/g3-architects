@@ -307,3 +307,18 @@ nav {
 #sponspors .brand-img img {
   width: 100%;
 }
+/* footer starts */
+footer{
+  margin: 130px 0;
+}
+footer .container{
+  background: #FFF4E7;
+}
+footer p{
+  padding: 38px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark02);
+}
