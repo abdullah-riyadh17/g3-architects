@@ -130,7 +130,7 @@ nav {
 #feature-section .feature-content .mixed-heading .primary-cl {
   color: var(--primary-cl);
 }
-#feature-section .feature-content .para {
+#feature-section .feature-content .description {
   margin: 24px 0 32px;
 }
 
@@ -163,7 +163,7 @@ nav {
 #feature-love-enjoy .section-title .d-bloc {
   display: block;
 }
-#feature-love-enjoy .para {
+#feature-love-enjoy .description {
   margin: 24px 0 30px;
 }
 #feature-love-enjoy .content-item {
@@ -178,7 +178,7 @@ nav {
   font-size: 20px;
   color: var(--dark01);
 }
-#feature-love-enjoy .content-item .para {
+#feature-love-enjoy .content-item .description {
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -217,7 +217,7 @@ nav {
 #our-work .section-title {
   text-align: center;
 }
-#our-work .para {
+#our-work .description {
   margin: 30px 250px;
   text-align: center;
 }
@@ -243,11 +243,11 @@ nav {
 #some-facts .section-title {
   text-align: center;
 }
-#some-facts .para {
+#some-facts .description {
   text-align: center;
   margin: 21px 0 100px;
 }
-#some-facts .para span {
+#some-facts .description span {
   display: block;
 }
 #some-facts .facts-items {
@@ -287,7 +287,7 @@ nav {
 #sponspors .sponspors-heading {
   text-align: center;
 }
-#sponspors .para {
+#sponspors .description {
   padding: 24px 300px;
 }
 #sponspors .spon-brand {
@@ -308,17 +308,185 @@ nav {
   width: 100%;
 }
 /* footer starts */
-footer{
+footer {
   margin: 130px 0;
 }
-footer .container{
-  background: #FFF4E7;
+footer .container {
+  background: #fff4e7;
 }
-footer p{
+footer p {
   padding: 38px 0;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: var(--dark02);
+}
+/* /* media query mobile device */
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .primary-button {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .section-title {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  /* common */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu ul li {
+    margin-top: 20px;
+  }
+
+  #top-banner h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
+
+  #top-banner h1 span {
+    display: inline;
+  }
+  #top-banner .description {
+    padding: 20px;
+  }
+
+  #top-banner .banner-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #feature-section {
+    flex-direction: column;
+    gap: 0;
+    padding: 70px 0 70px;
+  }
+  #feature-section .feature-img-part {
+    width: 100%;
+  }
+  #feature-section .feature-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #feature-section .feature-img img {
+    width: 100%;
+  }
+
+  #feature-section .feature-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  #feature-section .feature-content .mixed-heading {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  #feature-love-enjoy .feature-content-img {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #feature-love-enjoy .love-content {
+    width: 100%;
+  }
+  #feature-love-enjoy .section-title {
+    margin-top: 30px;
+  }
+  #feature-love-enjoy .section-title .d-bloc {
+    display: inline;
+  }
+  #feature-love-enjoy .description {
+    text-align: justify;
+    padding: 10px;
+  }
+  #feature-love-enjoy .content-item .description {
+    margin-top: 15px;
+  }
+  #feature-love-enjoy .love-image {
+    width: 100%;
+  }
+  #feature-love-enjoy .experience {
+    padding: 20px 18px;
+    left: 50px;
+    font-size: 25px;
+  }
+  #feature-love-enjoy .experience span {
+    font-size: 18px;
+  }
+
+  #our-work {
+    margin-bottom: 50px;
+  }
+  #our-work .section-title {
+    text-align: left;
+  }
+  #our-work .description {
+    margin: 30px 0;
+    text-align: left;
+    padding-left: 20px;
+  }
+  #our-work .work-image {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  #our-work .work-image .image-item {
+    width: 100%;
+  }
+  #our-work .work-image .image-item img {
+    width: 100%;
+  }
+
+  #some-facts {
+    margin: 80px 0;
+  }
+  #some-facts .description {
+    margin: 21px 0 50px;
+    padding: 20px;
+  }
+  #some-facts .description span {
+    display: inline;
+  }
+  #some-facts .facts-items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    place-items: center;
+  }
+
+  #sponspors .section-title {
+    text-align: center;
+    padding-left: 0;
+  }
+  #sponspors .description {
+    padding: 20px;
+    text-align: center;
+  }
+  #sponspors .spon-brand {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  footer .container {
+    width: 100%;
+  }
+  footer p {
+    font-size: 16px;
+  }
 }
